@@ -1,8 +1,12 @@
 <?php
 
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use App\Models\Job;
+
+Route::get('/', function (){
+    //$jobs = Job::all();
+    //dd($jobs);
+});
 
 Route::get('/', function () {
     return view('home');
