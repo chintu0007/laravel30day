@@ -3,13 +3,14 @@
         Jobs Page
     </x-slot:heading>
 
-    <h1>Hello from the Jobs Page.</h1>
-
-
-    @foreach ($jobs as $job)
-        <li>
-            <a href="/job/{{ $job['id'] }}"><strong>{{ $job['title'] }} : </strong> pay {{ $job['salary'] }}</a>
-        </li>
-    @endforeach
+    @if($jobs)
+        <ul>
+            @foreach ($jobs as $job)
+                <li>
+                    <a class="text-blue-500 hover:underline;" href="/job/{{ $job['id'] }}"><strong>{{ $job['title'] }} : </strong> pay {{ $job['salary'] }}</a>
+                </li>
+            @endforeach
+        </ul>
+    @endif
 
 </x-layout>
