@@ -17,6 +17,10 @@ class Job extends Model
 
     protected $fillable = ['title', 'salary', 'empoyer_id'];
 
+    public function employer() {
+        return $this->belongsTo(Employer::class);
+    }
+
     // public static function find(int $id):array {
     //     $job = Arr::first(static::all(), fn($job) => $job['id'] == $id);
 
