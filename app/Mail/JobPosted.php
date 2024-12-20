@@ -39,7 +39,7 @@ class JobPosted extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'mail.job-posted',
+            view: 'mail.job-posted'
         );
     }
 
