@@ -11,7 +11,7 @@
                     href="/jobs/{{ $job['id'] }}">
                     <div class="font-bold text-blue-500 text-sm">{{ $job->employer->name }}</div>
                     <div>
-                        <strong>{{ $job['title'] }}
+                        <strong class="text-laracasts">{{ $job['title'] }}
                             : </strong> pay {{ $job['salary'] }} per year
 
                     </div>
